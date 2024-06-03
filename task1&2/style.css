@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Teachers";
+  src: url("Teachers/Teachers-VariableFont_wght.ttf");
+}
+body {
+  font-family: "Teachers", Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #2f4f4f;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background-color: #f0ffff;
+  color: #2f4f4f;
+  padding: 10px;
+  text-align: center;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #2f4f4f;
+  text-decoration: none;
+}
+section {
+  padding: 20px;
+}
+footer {
+  background-color: #2f4f4f;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  color: #2f4f4f;
+}
+img {
+  border-radius: 10px;
+  cursor: pointer;
+  width: 300px;
+  height: 200px;
+}
+.home {
+  text-align: center;
+}
+section {
+  background-color: #90e5da;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.products-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #90e5da;
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+  header,
+  nav,
+  section,
+  footer {
+    padding: 5px;
+  }
+  nav ul li {
+    margin-right: 5px;
+  }
+  img {
+    max-width: 300px;
+    height: auto;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  header,
+  nav,
+  section,
+  footer {
+    padding: 10px;
+  }
+  nav ul li {
+    margin-right: 10px;
+  }
+  img {
+    max-width: 300px;
+    height: auto;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  header,
+  nav,
+  section,
+  footer {
+    padding: 15px;
+  }
+  nav ul li {
+    margin-right: 15px;
+  }
+  img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  header,
+  nav,
+  section,
+  footer {
+    padding: 20px;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+  img {
+    height: 200px;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to My Interactive Webpage</h1>
+
+    <!-- Form Validation -->
+    <h2>Form Validation</h2>
+    <form id="myForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" />
+      <br /><br />
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" />
+      <br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- Interactive Menu -->
+    <h2>Interactive Menu</h2>
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+    <!-- Dynamic Content Updates -->
+    <h2>Dynamic Content Updates</h2>
+    <button onclick="updateContent()">Click Me!</button>
+    <p id="content">This is the original content.</p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
