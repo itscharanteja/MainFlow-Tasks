@@ -1,0 +1,16 @@
+.image-item {
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: flex;
+  align-content: center;
+}
+
+.image-item img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.image-item:hover {
+  transform: scale(1.1);
+}
